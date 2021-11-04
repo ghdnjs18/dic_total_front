@@ -1,0 +1,140 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+  
+
+#search-box{
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+}
+#search{
+    all: unset;
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    text-align: left;
+    border: 2px solid rgb(224, 224, 224);
+    color: #256dc0;
+}
+
+#select-box{
+    all: unset;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+    text-align: left;
+    border: 2px solid rgb(224, 224, 224);
+    color: #256dc0;
+}
+
+#submit{
+    all: unset;
+    background-color: beige;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#submit:hover{
+    background-color: skyblue;
+}
+
+
+#container {
+    width: 60%;
+    columns: 1;
+    margin: 50px auto;
+}
+.item {
+    width: 100%;
+    /* height: 300px; */ 
+    margin-bottom: 10px;
+    background: beige;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block; /* 컬럼 짤림 방지*/
+}
+
+a {
+    color: black;
+    text-decoration-line:overline;
+}
+/* 링크 있는 거 */
+a:link {
+    
+}
+/* 링크 한번 클릭 후 부터 */
+a:visited {
+    color: red;
+    text-decoration-line:none;
+
+}
+/* 마우스 올리고 있을 때 */
+a:hover {
+    color: blue;
+    text-decoration-line: underline;
+    
+}
+/* 마우스 클릭하고 때기 전까지  */
+a:active {
+    color: green;
+    text-decoration-line: line-through;
+}
+
+
+/* 갤럭시 아이폰 반응형 웹 */
+@media screen and (max-width: 430px) {
+    #search-box {
+        margin: 0px;
+        margin-top: 50px;
+    }
+    #search {
+        width: 40%;
+    }
+    #submit {
+        width: 15%;
+    }
+    #container {
+        width: 70%;
+        columns: 1;
+    }
+    
+}
+
+/* 자동검색창 */
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: initial;
+    border: 1px solid #ce1919;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+     top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(184, 43, 43);
+    border-bottom: 1px solid #c22424;
+}
+
+.autocomplete-items div:hover {
+    background-color: #992929;
+}
+
+.autocomplete-active {
+   background-color: DodgerBlue !important;
+    color: #881414;
+}
